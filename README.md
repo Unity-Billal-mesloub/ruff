@@ -2,11 +2,11 @@
 
 # Ruff
 
-[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/Unity-Billal-mesloub/ruff)
 [![image](https://img.shields.io/pypi/v/ruff.svg)](https://pypi.python.org/pypi/ruff)
-[![image](https://img.shields.io/pypi/l/ruff.svg)](https://github.com/astral-sh/ruff/blob/main/LICENSE)
+[![image](https://img.shields.io/pypi/l/ruff.svg)](https://github.com/Unity-Billal-mesloub/ruff/blob/main/LICENSE)
 [![image](https://img.shields.io/pypi/pyversions/ruff.svg)](https://pypi.python.org/pypi/ruff)
-[![Actions status](https://github.com/astral-sh/ruff/workflows/CI/badge.svg)](https://github.com/astral-sh/ruff/actions)
+[![Actions status](https://github.com/Unity-Billal-mesloub/ruff/workflows/CI/badge.svg)](https://github.com/Unity-Billal-mesloub/ruff/actions)
 [![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?logo=discord&logoColor=white)](https://discord.com/invite/astral-sh)
 
 [**Docs**](https://docs.astral.sh/ruff/) | [**Playground**](https://play.ruff.rs/)
@@ -34,14 +34,14 @@ An extremely fast Python linter and code formatter, written in Rust.
 - 🔧 Fix support, for automatic error correction (e.g., automatically remove unused imports)
 - 📏 Over [800 built-in rules](https://docs.astral.sh/ruff/rules/), with native re-implementations
     of popular Flake8 plugins, like flake8-bugbear
-- ⌨️ First-party [editor integrations](https://docs.astral.sh/ruff/editors) for [VS Code](https://github.com/astral-sh/ruff-vscode) and [more](https://docs.astral.sh/ruff/editors/setup)
+- ⌨️ First-party [editor integrations](https://docs.astral.sh/ruff/editors) for [VS Code](https://github.com/Unity-Billal-mesloub/ruff-vscode) and [more](https://docs.astral.sh/ruff/editors/setup)
 - 🌎 Monorepo-friendly, with [hierarchical and cascading configuration](https://docs.astral.sh/ruff/configuration/#config-file-discovery)
 
 Ruff aims to be orders of magnitude faster than alternative tools while integrating more
 functionality behind a single, common interface.
 
 Ruff can be used to replace [Flake8](https://pypi.org/project/flake8/) (plus dozens of plugins),
-[Black](https://github.com/psf/black), [isort](https://pypi.org/project/isort/),
+[Black](https://github.com/Unity-Billal-mesloub/black), [isort](https://pypi.org/project/isort/),
 [pydocstyle](https://pypi.org/project/pydocstyle/), [pyupgrade](https://pypi.org/project/pyupgrade/),
 [autoflake](https://pypi.org/project/autoflake/), and more, all while executing tens or hundreds of
 times faster than any individual tool.
