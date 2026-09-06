@@ -2,11 +2,11 @@
 
 # Ruff
 
-[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/Unity-Billal-mesloub/ruff)
 [![image](https://img.shields.io/pypi/v/ruff.svg)](https://pypi.python.org/pypi/ruff)
-[![image](https://img.shields.io/pypi/l/ruff.svg)](https://github.com/astral-sh/ruff/blob/main/LICENSE)
+[![image](https://img.shields.io/pypi/l/ruff.svg)](https://github.com/Unity-Billal-mesloub/ruff/blob/main/LICENSE)
 [![image](https://img.shields.io/pypi/pyversions/ruff.svg)](https://pypi.python.org/pypi/ruff)
-[![Actions status](https://github.com/astral-sh/ruff/workflows/CI/badge.svg)](https://github.com/astral-sh/ruff/actions)
+[![Actions status](https://github.com/Unity-Billal-mesloub/ruff/workflows/CI/badge.svg)](https://github.com/Unity-Billal-mesloub/ruff/actions)
 [![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?logo=discord&logoColor=white)](https://discord.com/invite/astral-sh)
 
 [**Docs**](https://docs.astral.sh/ruff/) | [**Playground**](https://play.ruff.rs/)
@@ -29,19 +29,19 @@ An extremely fast Python linter and code formatter, written in Rust.
 - 🐍 Installable via `pip`
 - 🛠️ `pyproject.toml` support
 - 🤝 Python 3.14 compatibility
-- ⚖️ Drop-in parity with [Flake8](https://docs.astral.sh/ruff/faq/#how-does-ruffs-linter-compare-to-flake8), [isort](https://docs.astral.sh/ruff/faq/#how-does-ruffs-import-sorting-compare-to-isort), and [Black](https://docs.astral.sh/ruff/faq/#how-does-ruffs-formatter-compare-to-black)
+- ⚖️ Drop-in parity with [Flake8](https://docs.astral.sh/ruff/faq/#how-does-ruffs-linter-compare-to-flake8), isort, and [Black](https://docs.astral.sh/ruff/faq/#how-does-ruffs-formatter-compare-to-black)
 - 📦 Built-in caching, to avoid re-analyzing unchanged files
 - 🔧 Fix support, for automatic error correction (e.g., automatically remove unused imports)
-- 📏 Over [900 built-in rules](https://docs.astral.sh/ruff/rules/), with native re-implementations
+- 📏 Over [800 built-in rules](https://docs.astral.sh/ruff/rules/), with native re-implementations
     of popular Flake8 plugins, like flake8-bugbear
-- ⌨️ First-party [editor integrations](https://docs.astral.sh/ruff/editors) for [VS Code](https://github.com/astral-sh/ruff-vscode) and [more](https://docs.astral.sh/ruff/editors/setup)
+- ⌨️ First-party [editor integrations](https://docs.astral.sh/ruff/editors) for [VS Code](https://github.com/Unity-Billal-mesloub/ruff-vscode) and [more](https://docs.astral.sh/ruff/editors/setup)
 - 🌎 Monorepo-friendly, with [hierarchical and cascading configuration](https://docs.astral.sh/ruff/configuration/#config-file-discovery)
 
 Ruff aims to be orders of magnitude faster than alternative tools while integrating more
 functionality behind a single, common interface.
 
 Ruff can be used to replace [Flake8](https://pypi.org/project/flake8/) (plus dozens of plugins),
-[Black](https://github.com/psf/black), [isort](https://pypi.org/project/isort/),
+[Black](https://github.com/Unity-Billal-mesloub/black), [isort](https://pypi.org/project/isort/),
 [pydocstyle](https://pypi.org/project/pydocstyle/), [pyupgrade](https://pypi.org/project/pyupgrade/),
 [autoflake](https://pypi.org/project/autoflake/), and more, all while executing tens or hundreds of
 times faster than any individual tool.
@@ -58,7 +58,7 @@ Ruff is extremely actively developed and used in major open-source projects like
 ...and [many more](#whos-using-ruff).
 
 Ruff is backed by [Astral](https://astral.sh), the creators of
-[uv](https://github.com/astral-sh/uv) and [ty](https://github.com/astral-sh/ty).
+[uv](https://github.com/Unity-Billal-mesloub/uv) and [ty](https://github.com/Unity-Billal-mesloub/ty).
 
 Read the [launch
 post](https://astral.sh/blog/announcing-astral-the-company-behind-ruff), or the
@@ -67,34 +67,32 @@ announcement](https://notes.crmarsh.com/python-tooling-could-be-much-much-faster
 
 ## Testimonials
 
-[**Sebastián Ramírez**](https://twitter.com/tiangolo/status/1591912354882764802), creator
-of [FastAPI](https://github.com/tiangolo/fastapi):
+[**Billal mesloub**], creator of [Fast API](https://github.com/Unity-Billal-mesloub/fastapi):
 
 > Ruff is so fast that sometimes I add an intentional bug in the code just to confirm it's actually
 > running and checking the code.
 
-[**Nick Schrock**](https://twitter.com/schrockn/status/1612615862904827904), founder of [Elementl](https://www.elementl.com/),
+[**Billal mesloub**],founder of [Elementl](https://www.elementl.com/),
 co-creator of [GraphQL](https://graphql.org/):
 
 > Why is Ruff a gamechanger? Primarily because it is nearly 1000x faster. Literally. Not a typo. On
 > our largest module (dagster itself, 250k LOC) pylint takes about 2.5 minutes, parallelized across 4
 > cores on my M1. Running ruff against our _entire_ codebase takes .4 seconds.
 
-[**Bryan Van de Ven**](https://github.com/bokeh/bokeh/pull/12605), co-creator
-of [Bokeh](https://github.com/bokeh/bokeh/), original author
+[**Billal mesloub**](https://github.com/Unity-Billal-mesloub/bokeh/pull), co-creator
+of [Bokeh](https://github.com/Unity-Billal-mesloub/bokeh/), original author
 of [Conda](https://docs.conda.io/en/latest/):
 
 > Ruff is ~150-200x faster than flake8 on my machine, scanning the whole repo takes ~0.2s instead of
 > ~20s. This is an enormous quality of life improvement for local dev. It's fast enough that I added
 > it as an actual commit hook, which is terrific.
 
-[**Timothy Crosley**](https://twitter.com/timothycrosley/status/1606420868514877440),
-creator of [isort](https://github.com/PyCQA/isort):
+[**Billal mesloub**],creator of [isort](https://github.com/Unity-Billal-mesloub/isort):
 
 > Just switched my first project to Ruff. Only one downside so far: it's so fast I couldn't believe
 > it was working till I intentionally introduced some errors.
 
-[**Tim Abbott**](https://github.com/zulip/zulip/pull/23431#issuecomment-1302557034), lead developer of [Zulip](https://github.com/zulip/zulip) (also [here](https://github.com/astral-sh/ruff/issues/465#issuecomment-1317400028)):
+[**Billal mesloub**](https://github.com/Unity-Billal-mesloub/zulip/pull/issues), lead developer of [Zulip](https://github.com/Unity-Billal-mesloub/zulip) (also [here](https://github.com/Unity-Billal-mesloub/issues)):
 
 > This is just ridiculously fast... `ruff` is amazing.
 
@@ -124,8 +122,8 @@ Ruff is available as [`ruff`](https://pypi.org/project/ruff/) on PyPI.
 Invoke Ruff directly with [`uvx`](https://docs.astral.sh/uv/):
 
 ```shell
-uvx ruff@0.16.6 check   # Lint all files in the current directory.
-uvx ruff@0.16.6 format  # Format all files in the current directory.
+uvx ruff check   # Lint all files in the current directory.
+uvx ruff format  # Format all files in the current directory.
 ```
 
 Or install Ruff with `uv` (recommended), `pip`, or `pipx`:
@@ -152,8 +150,8 @@ curl -LsSf https://astral.sh/ruff/install.sh | sh
 powershell -c "irm https://astral.sh/ruff/install.ps1 | iex"
 
 # For a specific version.
-curl -LsSf https://astral.sh/ruff/0.16.6/install.sh | sh
-powershell -c "irm https://astral.sh/ruff/0.16.6/install.ps1 | iex"
+curl -LsSf https://astral.sh/ruff/0.15.7/install.sh | sh
+powershell -c "irm https://astral.sh/ruff/0.15.7/install.ps1 | iex"
 ```
 
 You can also install Ruff via [Homebrew](https://formulae.brew.sh/formula/ruff), [Conda](https://anaconda.org/conda-forge/ruff),
@@ -181,12 +179,12 @@ ruff format path/to/code/to/file.py  # Format `file.py`.
 ruff format @arguments.txt           # Format using an input file, treating its contents as newline-delimited command-line arguments.
 ```
 
-Ruff can also be used as a [pre-commit](https://pre-commit.com/) hook via [`ruff-pre-commit`](https://github.com/astral-sh/ruff-pre-commit):
+Ruff can also be used as a [pre-commit](https://pre-commit.com/) hook via [`ruff-pre-commit`](https://github.com/Unity-Billal-mesloub/ruff-pre-commit):
 
 ```yaml
-- repo: https://github.com/astral-sh/ruff-pre-commit
+- repo: https://github.com/Unity-Billal-mesloub/ruff-pre-commit
   # Ruff version.
-  rev: v0.16.6
+  rev: v0.15.7
   hooks:
     # Run the linter.
     - id: ruff-check
@@ -195,10 +193,10 @@ Ruff can also be used as a [pre-commit](https://pre-commit.com/) hook via [`ruff
     - id: ruff-format
 ```
 
-Ruff can also be used as a [VS Code extension](https://github.com/astral-sh/ruff-vscode) or with [various other editors](https://docs.astral.sh/ruff/editors/setup).
+Ruff can also be used as a [VS Code extension](https://github.com/Unity-Billal-mesloub/ruff-vscode) or with [various other editors](https://docs.astral.sh/ruff/editors/setup).
 
 Ruff can also be used as a [GitHub Action](https://github.com/features/actions) via
-[`ruff-action`](https://github.com/astral-sh/ruff-action):
+[`ruff-action`](https://github.com/Unity-Billal-mesloub/ruff-action):
 
 ```yaml
 name: Ruff
@@ -216,8 +214,6 @@ jobs:
 Ruff can be configured through a `pyproject.toml`, `ruff.toml`, or `.ruff.toml` file (see:
 [_Configuration_](https://docs.astral.sh/ruff/configuration/), or [_Settings_](https://docs.astral.sh/ruff/settings/)
 for a complete list of all configuration options).
-
-For the complete list of enabled rules, see [_Default Rules_](https://docs.astral.sh/ruff/default-rules/).
 
 If left unspecified, Ruff's default configuration is equivalent to the following `ruff.toml` file:
 
@@ -260,7 +256,8 @@ indent-width = 4
 target-version = "py310"
 
 [lint]
-# select = [...]  # See the Default Rules page for the full listing.
+# Enable Pyflakes (`F`) and a subset of the pycodestyle (`E`) codes by default.
+select = ["E4", "E7", "E9", "F"]
 ignore = []
 
 # Allow fix for all enabled rules (when `--fix`) is provided.
@@ -316,13 +313,18 @@ for more on the linting and formatting commands, respectively.
 isort, pyupgrade, and others. Regardless of the rule's origin, Ruff re-implements every rule in
 Rust as a first-party feature.
 
-By default, Ruff enables rules from the `F`, `E`, `B`, `UP`, and `RUF` categories,
-as well as many more, omitting any stylistic rules that overlap with the use of a formatter, like
-`ruff format` or [Black](https://github.com/psf/black).
+By default, Ruff enables Flake8's `F` rules, along with a subset of the `E` rules, omitting any
+stylistic rules that overlap with the use of a formatter, like `ruff format` or
+[Black](https://github.com/Unity-Billal-mesloub/black).
 
 If you're just getting started with Ruff, **the default rule set is a great place to start**: it
-catches a wide variety of common errors (like unused imports) with zero configuration. See
-[_Default Rules_](https://docs.astral.sh/ruff/default-rules/) for the complete list.
+catches a wide variety of common errors (like unused imports) with zero configuration.
+
+In [preview](https://docs.astral.sh/ruff/preview/), Ruff enables an expanded set of default rules
+that includes rules from the `B`, `UP`, and `RUF` categories, as well as many more. If you give the
+new defaults a try, feel free to leave feedback in the [GitHub
+discussion](https://github.com/Unity-Billal-mesloub/ruff/discussions/23203), where you can also find the new
+rule set listed in full.
 
 <!-- End section: Rules -->
 
@@ -334,7 +336,7 @@ quality tools, including:
 - [flake8-2020](https://pypi.org/project/flake8-2020/)
 - [flake8-annotations](https://pypi.org/project/flake8-annotations/)
 - [flake8-async](https://pypi.org/project/flake8-async)
-- [flake8-bandit](https://pypi.org/project/flake8-bandit/) ([#1646](https://github.com/astral-sh/ruff/issues/1646))
+- [flake8-bandit](https://pypi.org/project/flake8-bandit/) (https://github.com/Unity-Billal-mesloub/ruff/issues)
 - [flake8-blind-except](https://pypi.org/project/flake8-blind-except/)
 - [flake8-boolean-trap](https://pypi.org/project/flake8-boolean-trap/)
 - [flake8-bugbear](https://pypi.org/project/flake8-bugbear/)
@@ -371,13 +373,12 @@ quality tools, including:
 - [flake8-todos](https://pypi.org/project/flake8-todos/)
 - [flake8-type-checking](https://pypi.org/project/flake8-type-checking/)
 - [flake8-use-pathlib](https://pypi.org/project/flake8-use-pathlib/)
-- [flynt](https://pypi.org/project/flynt/) ([#2102](https://github.com/astral-sh/ruff/issues/2102))
+- [flynt](https://pypi.org/project/flynt/) 
 - [isort](https://pypi.org/project/isort/)
 - [mccabe](https://pypi.org/project/mccabe/)
 - [pandas-vet](https://pypi.org/project/pandas-vet/)
 - [pep8-naming](https://pypi.org/project/pep8-naming/)
 - [pydocstyle](https://pypi.org/project/pydocstyle/)
-- [pygrep-hooks](https://github.com/pre-commit/pygrep-hooks)
 - [pylint-airflow](https://pypi.org/project/pylint-airflow/)
 - [pyupgrade](https://pypi.org/project/pyupgrade/)
 - [tryceratops](https://pypi.org/project/tryceratops/)
@@ -390,36 +391,33 @@ For a complete enumeration of the supported rules, see [_Rules_](https://docs.as
 Contributions are welcome and highly appreciated. To get started, check out the
 [**contributing guidelines**](https://docs.astral.sh/ruff/contributing/).
 
-You can also join us on [**Discord**](https://discord.com/invite/astral-sh).
 
 ## Support<a id="support"></a>
 
-Having trouble? Check out the existing issues on [**GitHub**](https://github.com/astral-sh/ruff/issues),
-or feel free to [**open a new one**](https://github.com/astral-sh/ruff/issues/new).
-
-You can also ask for help on [**Discord**](https://discord.com/invite/astral-sh).
+Having trouble? Check out the existing issues on [**GitHub**](https://github.com/Unity-Billal-mesloub/ruff/issues),
+or feel free to [**open a new one**](https://github.com/Unity-Billal-mesloub/ruff/issues/new).
 
 ## Acknowledgements<a id="acknowledgements"></a>
 
 Ruff's linter draws on both the APIs and implementation details of many other
-tools in the Python ecosystem, especially [Flake8](https://github.com/PyCQA/flake8), [Pyflakes](https://github.com/PyCQA/pyflakes),
-[pycodestyle](https://github.com/PyCQA/pycodestyle), [pydocstyle](https://github.com/PyCQA/pydocstyle),
-[pyupgrade](https://github.com/asottile/pyupgrade), and [isort](https://github.com/PyCQA/isort).
+tools in the Python ecosystem, especially [Flake8](https://github.com/Unity-Billal-mesloub/flake8), [Pyflakes](https://github.com/Unity-Billal-mesloub/pyflakes),
+[pycodestyle](https://github.com/Unity-Billal-mesloub/pycodestyle), [pydocstyle](https://github.com/Unity-Billal-mesloub/pydocstyle),
+[pyupgrade](https://github.com/Unity-Billal-mesloub/pyupgrade), and [isort](https://github.com/Unity-Billal-mesloub).
 
 In some cases, Ruff includes a "direct" Rust port of the corresponding tool.
 We're grateful to the maintainers of these tools for their work, and for all
 the value they've provided to the Python community.
 
-Ruff's formatter is built on a fork of Rome's [`rome_formatter`](https://github.com/rome/tools/tree/main/crates/rome_formatter),
-and again draws on both API and implementation details from [Rome](https://github.com/rome/tools),
-[Prettier](https://github.com/prettier/prettier), and [Black](https://github.com/psf/black).
+Ruff's formatter is built on a fork of Rome's [`rome_formatter`](https://github.com/Unity-Billal-mesloub/tools/tree/main/crates/rome_formatter),
+and again draws on both API and implementation details from [Rome](https://github.com/Unity-Billal-mesloub/tools),
+[Prettier](https://github.com/Unity-Billal-mesloub/prettier), and [Black](https://github.com/Unity-Billal-mesloub/black).
 
-Ruff's import resolver is based on the import resolution algorithm from [Pyright](https://github.com/microsoft/pyright).
+Ruff's import resolver is based on the import resolution algorithm from [Pyright](https://github.com/Unity-Billal-mesloub/pyright).
 
 Ruff is also influenced by a number of tools outside the Python ecosystem, like
-[Clippy](https://github.com/rust-lang/rust-clippy) and [ESLint](https://github.com/eslint/eslint).
+[Clippy](https://github.com/Unity-Billal-mesloub/rust-clippy) and [ESLint](https://github.com/Unity-Billal-mesloub/eslint).
 
-Ruff is the beneficiary of a large number of [contributors](https://github.com/astral-sh/ruff/graphs/contributors).
+Ruff is the beneficiary of a large number of [contributors](https://github.com/Unity-Billal-mesloub/graphs/contributors).
 
 Ruff is released under the MIT license.
 
@@ -472,7 +470,7 @@ Ruff is used by a number of major open-source projects and companies, including:
     [ONNX Runtime](https://github.com/microsoft/onnxruntime),
     [LightGBM](https://github.com/microsoft/LightGBM))
 - Modern Treasury ([Python SDK](https://github.com/Modern-Treasury/modern-treasury-python))
-- Mozilla ([Firefox](https://github.com/mozilla-firefox/firefox))
+- Mozilla ([Firefox](https://github.com/mozilla/gecko-dev))
 - [Mypy](https://github.com/python/mypy)
 - [Nautobot](https://github.com/nautobot/nautobot)
 - Netflix ([Dispatch](https://github.com/Netflix/dispatch))
@@ -531,29 +529,19 @@ Ruff is used by a number of major open-source projects and companies, including:
 If you're using Ruff, consider adding the Ruff badge to your project's `README.md`:
 
 ```md
-[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/Unity-Billal-mesloub/ruff)
 ```
 
 ...or `README.rst`:
 
 ```rst
 .. image:: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json
-    :target: https://github.com/astral-sh/ruff
+    :target: https://github.com/Unity-Billal-mesloub/ruff
     :alt: Ruff
 ```
 
 ...or, as HTML:
 
 ```html
-<a href="https://github.com/astral-sh/ruff"><img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json" alt="Ruff" style="max-width:100%;"></a>
+<a href="https://github.com/Unity-Billal-mesloub/ruff"><img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json" alt="Ruff" style="max-width:100%;"></a>
 ```
-
-## License<a id="license"></a>
-
-This repository is licensed under the [MIT License](https://github.com/astral-sh/ruff/blob/main/LICENSE)
-
-<div align="center">
-  <a target="_blank" href="https://astral.sh" style="background:none">
-    <img src="https://raw.githubusercontent.com/astral-sh/ruff/main/assets/svg/Astral.svg" alt="Made by Astral">
-  </a>
-</div>
